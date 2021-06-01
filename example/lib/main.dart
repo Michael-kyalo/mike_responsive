@@ -31,17 +31,13 @@ class MyApp extends StatelessWidget {
 class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return ResponsiveWidgetBuilder(
-      basebuilder: (context, sizingInformation) {
-        return Scaffold(
-          body: Center(
-            child: Text(
-              sizingInformation.toString(),
-              style: TextStyle(fontSize: 21),
-            ),
-          ),
-        );
-      },
+    return ScreenTypeLayout(
+      mobile: OrientationLayout(
+        portrait: Text("displays portrait on mobile"),
+        landscape: Text("displays landscape on mobile"),
+      ),
+      tablet: Text("tablet"),
+      desktop: Text("desktop/web"),
     );
   }
 }
