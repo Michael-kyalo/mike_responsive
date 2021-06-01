@@ -1,8 +1,8 @@
 name: mike_responsive
-description: A new Flutter package project.
+description: package for responsive ui.
 version: 0.0.1
-author:
-homepage:
+author: Michael Kyalo <kyalomike8@gmail.com>
+homepage: https://github.com/Michael-kyalo/mike_responsive
 
 environment:
   sdk: ">=2.7.0 <3.0.0"

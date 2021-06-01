@@ -1,16 +1,22 @@
-# example
+# mike_responsive
 
-A new Flutter project.
+Provides Architecture for Responsive flutter application.
 
-## Getting Started
+## installation
+To use this plugin, add mike_responsive as a dependecy in your pubspec.yaml file.
 
-This project is a starting point for a Flutter application.
+## usage
+Use ScreenTypeLayout widget to set mobile, tablet and desktop . Use OrientationLayout to set portrait and landscape 
 
-A few resources to get you started if this is your first Flutter project:
+*Example Usage ( complete with all params ):**
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```dart
+ Widget build(BuildContext context) {
+    return ScreenTypeLayout(
+      mobile: OrientationLayout(
+        portrait: HomeMobilePortrait(),
+        landscape: HomeMobileLandscape(),
+      ),
+      tablet: HomeViewTablet(),
+    );
+  }
