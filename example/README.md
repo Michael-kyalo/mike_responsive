@@ -20,3 +20,5 @@ Use ScreenTypeLayout widget to set mobile, tablet and desktop . Use OrientationL
       tablet: HomeViewTablet(),
     );
   }
+  
+```
